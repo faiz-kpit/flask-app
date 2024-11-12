@@ -31,7 +31,19 @@ spec:
   links:
   -url: http://127.0.0.1:5000
   title: Flask API
-
+# User Entity: alice
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: alice
+  description: Backend Developer
+spec:
+  profile:
+    displayName: Alice Smith
+    email: alice@example.com
+    picture: https://example.com/images/alice.png
+  memberOf:
+    - group:team-xyz
 
 # apiVersion: backstage.io/v1beta3
 # kind: Component
